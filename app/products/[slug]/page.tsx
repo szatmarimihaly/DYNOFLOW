@@ -1,11 +1,48 @@
-import React from 'react'
+import { supabase } from '@/lib/supabase';
+import ModelCard from '@/app/components/model/ModelCard';
+import ModelError from '@/app/components/error/ModelError';
 
-const ProductPage = ({ params } : { params: {slug : string} }) => {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
-    const { slug } = params;
+const BrandModelsPage = async ({ params }: Props) => {
+  const { slug } = await Promise.resolve(params);
+
+  // 1. Lekérjük a márkát a slug alapján
+  const { data: brand, error: brandError } = await supabase
+    .from('brands')
+    .select('id, name')
+    .eq('slug', slug)
+    .single();
+
+  if (!brand || brandError) {
+    return <ModelError />;
+  }
+
+  // 2. Lekérjük a márkához tartozó modelleket
+  const { data: models, error: modelError } = await supabase
+    .from('models')
+    .select('id, name, slug')
+    .eq('brand_id', brand.id)
+    .order('name');
+
+  if (!models || modelError) {
+    return <ModelError />;
+  }
+
   return (
-    <div>page</div>
-  )
-}
+    <div className="p-6">
+      <h1 className="text-2xl font-bold mb-6">{brand.name}</h1>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {models.map((model) => (
+          <ModelCard key={model.id} model={model} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default ProductPage;
+export default BrandModelsPage;

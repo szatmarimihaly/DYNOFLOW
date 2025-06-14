@@ -13,6 +13,7 @@ if (!i18n.isInitialized) {
             button_change : 'EN',
             product_header: 'Our Products',
             brand_button: 'View Accessories',
+            model_error: 'Model not found',
           },
         },
         hu: {
@@ -22,6 +23,7 @@ if (!i18n.isInitialized) {
             button_change : 'HU',
             product_header: 'Termékeink',
             brand_button: 'Kiegészítők megtekintése',
+            model_error: 'Modell nem található',
           },
         },
       },
