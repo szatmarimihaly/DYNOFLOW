@@ -12,8 +12,15 @@ if (!i18n.isInitialized) {
             contact: 'Contact',
             button_change : 'EN',
             product_header: 'Our Products',
-            brand_button: 'View Accessories',
+            brand_button: 'Models',
             model_error: 'Model not found',
+            to_product : 'View products',
+
+            exhaust: 'Exhausts',
+            spoiler: 'Spoiler',
+            diffuser: 'Diffuser',
+            aero: 'Aero',
+            kit: 'Kit'
           },
         },
         hu: {
@@ -22,8 +29,15 @@ if (!i18n.isInitialized) {
             contact: 'Kapcsolat',
             button_change : 'HU',
             product_header: 'Termékeink',
-            brand_button: 'Kiegészítők megtekintése',
+            brand_button: 'Modellek',
             model_error: 'Modell nem található',
+
+            exhaust: 'Kipufogó',
+            spoiler: 'Szárnyak',
+            diffuser: 'Diffúzor',
+            aero: 'Aero',
+            kit: 'Kit-ek',
+            to_product : 'Termékek megtekintése',
           },
         },
       },

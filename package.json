@@ -17,6 +17,7 @@
     "i18next": "^25.2.1",
     "next": "15.3.3",
     "next-cloudinary": "^6.16.0",
+    "node-cache": "^5.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.5.2"
