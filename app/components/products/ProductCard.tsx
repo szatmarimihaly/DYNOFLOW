@@ -18,7 +18,8 @@ const ProductCard = ({ product } : { product : Product }) => {
         alt={product.name}
         width={300}
         height={300}
-        className='rounded-xl object-cover lg:w-200 md:w-120'
+        style={{ objectFit: 'cover' }}
+        sizes="(max-width: 768px) 100vw, 300px"
       />
 
       <h3 className='text-xl font-semibold'>{product.name}</h3>

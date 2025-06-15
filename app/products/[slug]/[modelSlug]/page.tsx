@@ -33,7 +33,6 @@ const ProductPage = async ({ params }: Props) => {
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-6">{model.name}</h1>
       <ProductList products={products} />
     </div>
   );
