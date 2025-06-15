@@ -15,6 +15,7 @@ if (!i18n.isInitialized) {
             brand_button: 'Models',
             model_error: 'Model not found',
             to_product : 'View products',
+            cart_button : 'Add to Cart',
 
             exhaust: 'Exhausts',
             spoiler: 'Spoiler',
@@ -31,6 +32,7 @@ if (!i18n.isInitialized) {
             product_header: 'Termékeink',
             brand_button: 'Modellek',
             model_error: 'Modell nem található',
+            cart_button : 'Kosárba',
 
             exhaust: 'Kipufogó',
             spoiler: 'Szárnyak',
