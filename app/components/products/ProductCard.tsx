@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import AddCartButton from './AddCartButton'
+import ProductModal from './ProductModal'
 
 type Product = {
   id: number;
@@ -24,9 +25,10 @@ const ProductCard = ({ product } : { product : Product }) => {
 
       <h3 className='text-xl font-semibold'>{product.name}</h3>
       <div className='flex items-center justify-between w-full'>
-        <p className='text-xl text-gray-700'>{product.price} EUR</p>
-        <AddCartButton />
+        <p className='text-xl text-gray-700'>{product.price.toFixed(2)}€</p>
+        <ProductModal product={product}/>
       </div>
+      
     </div>
   )
 }
