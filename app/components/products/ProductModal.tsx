@@ -4,6 +4,7 @@ import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/
 import Image from 'next/image'
 import AddCartButton from './AddCartButton'
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';
+import { useTranslation } from 'react-i18next'
 
 type Product = {
     id: number;
@@ -23,11 +24,12 @@ const ProductModal = ({ product }: { product : Product }) => {
 
     const [open, setOpen] = useState(false);
     const handleClose = () => setOpen(false);
+    const { t } = useTranslation();
 
   return (
     <>
         <Button variant='outlined' onClick={() => setOpen(true)}>
-            Megtekintés
+            {t('view_product')}
         </Button>
 
         <Dialog open={open} onClose={handleClose} maxWidth='sm' fullWidth>

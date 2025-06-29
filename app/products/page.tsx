@@ -5,8 +5,8 @@ import BrandList from '../components/brand/BrandList';
 import ProductHeader from '../components/header/ProductHeader';
 
 export const metadata: Metadata = {
-  title: "DYNOFLOW | PRODUCTS",
-  description: "Webshop selling carbon products, exhaust systems and accessories for cars",
+  title: "DYNOFLOW | BRANDS",
+  description: "Explore premium car brands offered by DYNOFLOW. Carbon fiber accessories, exhaust systems, and performance tuning parts for every vehicle type.",
 };
 
 const Products = () => {

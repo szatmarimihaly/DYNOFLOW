@@ -1,12 +1,15 @@
 
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase'
 import BrandCard from './BrandCard'
+import { Metadata } from 'next';
 
 type Brand = {
     id: number;
     name : string;
     slug: string;
 };
+
+export const revalidate = 43200;
 
 const BrandList = async() => {
   const { data: brands, error } = await supabase

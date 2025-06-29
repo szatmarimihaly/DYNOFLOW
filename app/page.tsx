@@ -2,7 +2,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "DYNOFLOW | CARBON",
-  description: "Webshop selling carbon products, exhaust systems and accessories for cars",
+  description: "Explore premium car brands offered by DYNOFLOW. Carbon fiber accessories, exhaust systems, and performance tuning parts for every vehicle type.",
 };
 
 export default function Home() {

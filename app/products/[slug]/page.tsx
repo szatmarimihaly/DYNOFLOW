@@ -1,12 +1,25 @@
 import { supabase } from '@/lib/supabase';
 import ModelCard from '@/app/components/model/ModelCard';
 import ModelError from '@/app/components/error/ModelError';
+import { Metadata } from 'next';
 
 type Props = {
   params: {
     slug: string;
   };
 };
+
+export const revalidate = 43200;
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const brandName = decodeURIComponent(params.slug).toUpperCase(); // Or fetch from Supabase
+
+  return {
+    title: `DYNOFLOW | ${brandName} Models`,
+    description: `Choose your ${brandName} model and discover available carbon fiber upgrades, exhaust systems, and tuning accessories.`,
+  };
+}
+
 
 const BrandModelsPage = async ({ params }: Props) => {
   const { slug } = await Promise.resolve(params);

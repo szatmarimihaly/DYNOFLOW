@@ -16,6 +16,7 @@ if (!i18n.isInitialized) {
             model_error: 'Model not found',
             to_product : 'View products',
             cart_button : 'Add to Cart',
+            view_product: 'View Product',
 
             exhaust: 'Exhausts',
             spoiler: 'Spoiler',
@@ -33,13 +34,14 @@ if (!i18n.isInitialized) {
             brand_button: 'Modellek',
             model_error: 'Modell nem található',
             cart_button : 'Kosárba',
+            view_product: 'Termék megtekintése',
 
             exhaust: 'Kipufogó',
             spoiler: 'Szárnyak',
             diffuser: 'Diffúzor',
             aero: 'Aero',
             kit: 'Kit-ek',
-            to_product : 'Termékek megtekintése',
+            to_product : 'Megtekintése',
           },
         },
       },
@@ -51,3 +53,4 @@ if (!i18n.isInitialized) {
     });
 }
 export default i18n;
+

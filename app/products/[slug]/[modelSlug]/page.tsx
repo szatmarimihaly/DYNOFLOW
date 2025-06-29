@@ -3,6 +3,7 @@
 import { supabase } from '@/lib/supabase';
 import ProductList from '@/app/components/products/ProductList';
 import ModelError from '@/app/components/error/ModelError';
+import { Metadata } from 'next';
 
 type Props = {
   params: {
@@ -10,6 +11,20 @@ type Props = {
     modelSlug: string;
   };
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string; modelSlug: string };
+}): Promise<Metadata> {
+  const brand = decodeURIComponent(params.slug).toUpperCase();
+  const model = decodeURIComponent(params.modelSlug).toUpperCase();
+
+  return {
+    title: `DYNOFLOW | ${brand} ${model}`,
+    description: `High-quality carbon fiber accessories and exhaust systems for your ${brand} ${model}. Customize your car with premium DYNOFLOW upgrades.`,
+  };
+}
 
 const ProductPage = async ({ params }: Props) => {
   const { slug, modelSlug } = await Promise.resolve(params);

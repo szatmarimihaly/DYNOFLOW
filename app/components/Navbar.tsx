@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { useTranslation } from "react-i18next";
 import LanguageButton from './button/LanguageButton';
+import GoToCart from '../cart/GoToCart';
 
 const Navbar = () => {
 
@@ -28,9 +28,8 @@ const Navbar = () => {
                 height={50}
             />
 
-            <button>
-                <ShoppingBagOutlinedIcon fontSize="large"/>
-            </button>
+            <GoToCart />
+
         </div>
 
         {isOpen && (
