@@ -17,8 +17,9 @@ export async function generateMetadata({
 }: {
   params: { slug: string; modelSlug: string };
 }): Promise<Metadata> {
-  const brand = decodeURIComponent(params.slug).toUpperCase();
-  const model = decodeURIComponent(params.modelSlug).toUpperCase();
+  const { slug, modelSlug } = await Promise.resolve(params);
+  const brand = decodeURIComponent(slug).toUpperCase();
+  const model = decodeURIComponent(modelSlug).toUpperCase();
 
   return {
     title: `DYNOFLOW | ${brand} ${model}`,
@@ -27,7 +28,7 @@ export async function generateMetadata({
 }
 
 const ProductPage = async ({ params }: Props) => {
-  const { slug, modelSlug } = params;
+  const { slug, modelSlug } = await Promise.resolve(params);
 
   // 1. Lekérjük a modellt
   const { data: model, error: modelError } = await supabase

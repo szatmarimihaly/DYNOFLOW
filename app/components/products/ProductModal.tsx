@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material'
+import { Dialog, DialogTitle, DialogContent, Button } from '@mui/material'
 import Image from 'next/image'
 import AddCartButton from './AddCartButton'
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined';

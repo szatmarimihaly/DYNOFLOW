@@ -19,11 +19,11 @@ const CartItem = ({ id, name, slug, price } : CartItemProps) => {
         <div className="flex items-center gap-4 p-4 border-b">
             <Image src={`/products/${slug}.webp`} alt={name} width={100} height={100} />
             <div className="flex-1">
-                <h2 className="font-semibold text-lg">{name}</h2>
+                <h2 className="font-semibold text-md lg:text-lg">{name}</h2>
                 <p className="text-gray-600">{price.toFixed(2)} €</p>
             </div>
             <button onClick={() => removeFromCart(id)} className="text-red-600 hover:text-red-800">
-                <DeleteOutlineIcon />
+                <DeleteOutlineIcon fontSize='large'/>
             </button>
         </div>
     )

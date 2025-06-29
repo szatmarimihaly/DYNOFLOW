@@ -12,7 +12,8 @@ type Props = {
 export const revalidate = 43200;
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const brandName = decodeURIComponent(params.slug).toUpperCase(); // Or fetch from Supabase
+  const { slug } = await Promise.resolve(params);
+  const brandName = decodeURIComponent(slug).toUpperCase(); // Or fetch from Supabase
 
   return {
     title: `DYNOFLOW | ${brandName} Models`,
