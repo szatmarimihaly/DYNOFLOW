@@ -7,7 +7,7 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import { useTranslation } from "react-i18next";
 import LanguageButton from './button/LanguageButton';
-import GoToCart from '../cart/GoToCart';
+import GoToCart from './cartComponent/GoToCart';
 
 const Navbar = () => {
 

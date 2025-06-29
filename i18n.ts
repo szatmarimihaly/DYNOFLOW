@@ -22,7 +22,10 @@ if (!i18n.isInitialized) {
             spoiler: 'Spoiler',
             diffuser: 'Diffuser',
             aero: 'Aero',
-            kit: 'Kit'
+            kit: 'Kit',
+
+            empty: 'Your cart is empty',
+            cart_h1: 'Your Cart',
           },
         },
         hu: {
@@ -42,6 +45,9 @@ if (!i18n.isInitialized) {
             aero: 'Aero',
             kit: 'Kit-ek',
             to_product : 'Megtekintése',
+
+            empty: 'A kosár jelenleg üres',
+            cart_h1: 'Kosarad',
           },
         },
       },

@@ -27,7 +27,7 @@ export async function generateMetadata({
 }
 
 const ProductPage = async ({ params }: Props) => {
-  const { slug, modelSlug } = await Promise.resolve(params);
+  const { slug, modelSlug } = params;
 
   // 1. Lekérjük a modellt
   const { data: model, error: modelError } = await supabase

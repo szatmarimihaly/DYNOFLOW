@@ -14,12 +14,6 @@ type Product = {
     category?: string;
 };
 
-type Props = {
-    product: Product;
-    isOpen: boolean;
-    onClose: () => void;
-};
-
 const ProductModal = ({ product }: { product : Product }) => {
 
     const [open, setOpen] = useState(false);
@@ -38,7 +32,7 @@ const ProductModal = ({ product }: { product : Product }) => {
                 <Image src={`/products/${product.slug}.webp`} alt={product.name} width={400} height={250} style={{ objectFit: 'cover', width: '100%', height: 'auto', borderRadius: '12px' }}/>
                 <div className='flex items-center justify-between mt-4 mb-4'>
                     <p className='font-bold text-2xl'>{product.price.toFixed(2)}€</p>
-                    <AddCartButton/>
+                    <AddCartButton product={product}/>
                 </div>
             </DialogContent>
             <Button onClick={handleClose}><CancelOutlinedIcon fontSize='large'/></Button>
