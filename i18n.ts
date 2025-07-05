@@ -26,6 +26,8 @@ if (!i18n.isInitialized) {
 
             empty: 'Your cart is empty',
             cart_h1: 'Your Cart',
+            total: 'Total: ',
+            checkout: 'Proceed to Checkout',
           },
         },
         hu: {
@@ -48,6 +50,9 @@ if (!i18n.isInitialized) {
 
             empty: 'A kosár jelenleg üres',
             cart_h1: 'Kosarad',
+
+            total: 'Összesen: ',
+            checkout: 'Fizetés',
           },
         },
       },

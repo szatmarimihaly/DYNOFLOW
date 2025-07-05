@@ -1,6 +1,7 @@
 import React from 'react'
 import CartTitle from '../components/cartComponent/CartTitle'
 import CartList from '../components/cartComponent/CartList'
+import CartSummary from '../components/cartComponent/CartSummary'
 import { Metadata } from 'next'  
 
 export const metadata = {
@@ -14,6 +15,7 @@ const CartPage = () => {
     <main className='p-6'>
       <CartTitle />
       <CartList />
+      <CartSummary />
     </main>
   )
 }
