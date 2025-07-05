@@ -25,7 +25,8 @@ const Navbar = () => {
                 src={"/dynoflow1.png"}
                 alt="DynoFlow Logo"
                 width={200}
-                height={50}
+                height={200}
+                priority
             />
 
             <GoToCart />
