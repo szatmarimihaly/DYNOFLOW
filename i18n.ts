@@ -28,6 +28,20 @@ if (!i18n.isInitialized) {
             cart_h1: 'Your Cart',
             total: 'Total: ',
             checkout: 'Proceed to Checkout',
+            checkout_active: 'Processing...',
+
+            checkout_name: 'Full Name',
+            checkout_city: 'City',
+            checkout_postal: 'Postal Code',
+            checkout_street: 'Street',
+            checkout_address: 'House Number',
+            checkout_door: 'Door (optional)',
+            checkout_phone: '+36305771066',
+
+            payment: 'Payment',
+            success_message: 'Your purchase was successful! Thank YOU for choosing us!',
+            cancel_message: 'Your purchase was cancelled. Please try again.',
+            back_to: 'Back to Home',
           },
         },
         hu: {
@@ -53,6 +67,20 @@ if (!i18n.isInitialized) {
 
             total: 'Összesen: ',
             checkout: 'Fizetés',
+            checkout_active: 'Feldolgozás...',
+
+            checkout_name: 'Teljes név',
+            checkout_city: 'Város',
+            checkout_postal: 'Irányítószám',
+            checkout_street: 'Utca/Út',
+            checkout_address: 'Házszám',
+            checkout_door: 'Ajtó (opcionális)',
+            checkout_phone: '+36305771066',
+
+            payment: 'Fizetés',
+            success_message: 'A vásárlás sikeres volt! Köszönjük, hogy minket választottál!',
+            cancel_message: 'A vásárlás megszakítva. Kérjük, próbáld újra.',
+            back_to: 'Vissza a főoldalra',
           },
         },
       },

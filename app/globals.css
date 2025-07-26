@@ -9,6 +9,14 @@
   .loginput {
     @apply bg-whitesmoke p-4 outline-none w-full max-w-lg;
   }
+
+  .checkoutform {
+    @apply w-sm p-2 rounded-2xl bg-cyan-100 outline-none;
+  }
+
+  .stripe-header {
+    @apply text-sm font-medium md:text-3xl;
+  }
 }
 
 @theme {
