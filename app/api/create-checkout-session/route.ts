@@ -18,6 +18,7 @@ export async function POST(req: Request) {
           id: orderId,
           email: customerData.email,
           full_name: customerData.fullName,
+          phone: customerData.tel,
           city: customerData.city,
           postal_code: customerData.postalCode,
           adress: customerData.address,
